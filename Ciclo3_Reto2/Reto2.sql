@@ -42,6 +42,11 @@ MESSAGETEXT VARCHAR2(4000) NULL,
 PRIMARY KEY (ID));
 
 -- GET
+SELECT * FROM MESSAGE WHERE ID = :id
+https://gda7be1c46734d6-ck1a82e5ie6a36o6.adb.ca-toronto-1.oraclecloudapps.com/ords/admin/message/message/:id
+
+
+-- GET
 SELECT * FROM MESSAGE
 
 -- POST

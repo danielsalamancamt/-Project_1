@@ -49,7 +49,7 @@ function saveClient(){
     console.log(dataToSend);
 
     $.ajax({    
-        url : 'https://gda7be1c46734d6-ck1a82e5ie6a36o6.adb.ca-toronto-1.oraclecloudapps.com/ords/admin/client/client',
+        url : myURLClient,
         type : 'POST',
         contentType : 'application/json',
         data:dataToSend,
@@ -67,7 +67,7 @@ function deleteClient(idClient){
     let data={id:idClient};
     let dataToSend=JSON.stringify(data);
     $.ajax({    
-        url : 'https://gda7be1c46734d6-ck1a82e5ie6a36o6.adb.ca-toronto-1.oraclecloudapps.com/ords/admin/client/client',
+        url : myURLClient,
         type : 'DELETE',
         contentType : 'application/json',
         data:dataToSend,
@@ -88,7 +88,7 @@ function updateClient(){
     console.log(dataToSend);
 
     $.ajax({    
-        url : 'https://gda7be1c46734d6-ck1a82e5ie6a36o6.adb.ca-toronto-1.oraclecloudapps.com/ords/admin/client/client',
+        url : myURLClient,
         type : 'PUT',
         contentType : 'application/json',
         data:dataToSend,
